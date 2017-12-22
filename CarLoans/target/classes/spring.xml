@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	
+    <bean id="dataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+        <property name="driverClassName" value="com.mysql.jdbc.Driver" />
+        <property name="url" value="jdbc:mysql://127.0.0.1:3306/carloandb" />
+        <property name="username" value="admin" />
+        <property name="password" value="admin4321" />
+    </bean>
+  
+    
+     <!-- Definition for JdbcUserCredentialsDAO bean -->
+   <bean id="JdbcUserCredentialsDAO" 
+      class="com.hua.it.distsystems.dao.impl.JdbcUserCredentialsDAO">
+      <property name="dataSource"  ref="dataSource" />    
+   </bean> 
+   
+     <!-- Definition for JdbcDisBookUserDAO bean -->
+   <bean id="JdbcDisBookUserDAO" 
+      class="com.hua.it.distsystems.dao.impl.JdbcDisBookUserDAO">
+      <property name="dataSource"  ref="dataSource" />    
+   </bean> 
+    
+
+</beans>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="src" path="src/main/java"/>
+	<classpathentry exported="true" kind="var" path="ECLIPSE_WORKSPACE/.metadata/.plugins/org.wso2.developerstudio.eclipse.libraries/lib/jsr311-api-1.1.1.jar"/>
+	<classpathentry kind="lib" path="src/main/webapp/WEB-INF/lib/com.mysql.jdbc_5.1.5.jar"/>
+	<classpathentry kind="lib" path="src/main/webapp/WEB-INF/lib/jbcrypt.jar"/>
+	<classpathentry kind="output" path="target"/>
+</classpath>
